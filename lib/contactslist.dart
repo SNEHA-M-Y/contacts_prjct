@@ -17,15 +17,15 @@ class _contactlistState extends State<contactlist> {
             decoration: InputDecoration(filled: true,
                 hintText: "Search contacts",
                 hintStyle: TextStyle(color: Colors.black38),
-                prefixIcon: Icon(Icons.search),
-                suffixIcon: Icon(Icons.mic_none),
+                prefixIcon: Icon(Icons.search,color: Colors.green,),
+                suffixIcon: Icon(Icons.mic_none_outlined,color: Colors.green,),
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(30),borderSide: BorderSide.none)
               )),
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))],
       ),
       floatingActionButton: IconButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => nwcontact(),));
-            },icon: Icon(Icons.person_add_alt_1_rounded),),
+            },icon: Icon(Icons.person_add_alt_1_rounded,color: Colors.green,),),
       
     body:
      ListView(children: [
